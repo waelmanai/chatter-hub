@@ -22,7 +22,7 @@ const MemberIdPage = async ({
     
     if (!profile) {
         return redirectToSignIn();
-    }
+    } 
 
     const currentMember = await db.member.findFirst({
         where: {
